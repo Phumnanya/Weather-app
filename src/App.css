@@ -87,7 +87,7 @@ border-style: none;}}
   width: 100%;
   margin: 20px 0;
 }
-@media (max-width: 800px) {.input-div {width: 80%;}}
+@media (max-width: 800px) {.input-div {width: 100%;}}
 
 input[type=text] {
   margin: auto;
