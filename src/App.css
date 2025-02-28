@@ -87,11 +87,11 @@ border-style: none;}}
   width: 100%;
   margin: 20px 0;
 }
-@media (max-width: 800px) {.input-div {width: 100%;}}
+@media (max-width: 800px) {.input-div {width: 80%;}}
 
 input[type=text] {
   margin: auto;
-  width: 70%;
+  width: 65%;
   padding: 12px 15px;
   border-radius: 18px;
   border: solid 1px rgb(190, 190, 190);
