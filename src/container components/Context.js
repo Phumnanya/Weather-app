@@ -1,0 +1,32 @@
+import React, {createContext, useState} from "react";
+
+export const Weathercontext = createContext();
+
+export const Weatherprovider = ({children}) => {
+    const [weatherData, setweatherData] = useState(null);
+    const [hourlyData, sethourlyData] = useState(null);
+
+    const fetchWeather = async (city) => {
+        const API_KEY = "431f5ef15584a951c785eec85f2b0ee0";
+        //const key = '730798f66faa465f9e4110816251702'
+        const current = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+        const hourly = `https://pro.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
+
+        try {
+            const response = await fetch(current);
+            const response2 = await fetch(hourly);
+            const data0 = await response.json();
+            const data1 = await response2.json();
+            console.log(data0, data1)
+            setweatherData(data0);
+            sethourlyData(data1);
+          } catch (error) {
+            console.error("error fetching data:", error);
+          }
+    };
+    return (
+        <Weathercontext.Provider value={{weatherData, hourlyData, fetchWeather}}>
+            {children}
+        </Weathercontext.Provider>
+    );
+};
