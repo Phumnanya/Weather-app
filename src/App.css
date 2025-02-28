@@ -91,12 +91,12 @@ border-style: none;}}
 
 input[type=text] {
   margin: auto;
-  width: 65%;
-  padding: 12px 15px;
-  border-radius: 18px;
+  width: 70%;
+  padding: 10px 12px;
+  border-radius: 15px;
   border: solid 1px rgb(190, 190, 190);
 }
-@media (max-width: 800px) {input[type=text] {width: 70%;}}
+@media (max-width: 800px) {input[type=text] {width: 60%;}}
 
 button {
   background-color: #da0037;
