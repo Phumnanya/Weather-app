@@ -12,17 +12,10 @@ function Highlights() {
         return <p> </p>
     }
 
-   /* function mark (date) {
-        return (date * 1000);
-        date.toLocaleTimeString();
-    };
-    */
-
     return(
         <div className="highlights">
-            
-            <div className="today">
-                <h1>{weatherData.name}</h1>
+        <div>
+                <h2>Current Weather</h2>
             </div>
             <div className="info_container">
                 <div className="info">
@@ -42,8 +35,8 @@ function Highlights() {
                 </div>
             </div>
 
-            <div className="today">
-                <h2>Hourly</h2>
+            <div>
+                <h2>Hourly Weather</h2>
             </div>
             <div className="hourly_forecast">
                 <div className="hourly">
