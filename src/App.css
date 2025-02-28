@@ -160,6 +160,9 @@ margin-top: 15px; border-style: none;}}
   display: block;
   margin: auto;
 }
+.hourly h5 {
+  color: #da0037;
+}
 .temp {
   grid-row-start: 1;
   grid-row-end: 3;
