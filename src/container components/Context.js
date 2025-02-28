@@ -7,8 +7,7 @@ export const Weatherprovider = ({children}) => {
     const [hourlyData, sethourlyData] = useState(null);
 
     const fetchWeather = async (city) => {
-        const API_KEY = "431f5ef15584a951c785eec85f2b0ee0";
-        //const key = '730798f66faa465f9e4110816251702'
+        const API_KEY = "431f5ef15584a951c785eec85f2b0ee0";
         const current = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
         const hourly = `https://pro.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
 
@@ -16,8 +15,7 @@ export const Weatherprovider = ({children}) => {
             const response = await fetch(current);
             const response2 = await fetch(hourly);
             const data0 = await response.json();
-            const data1 = await response2.json();
-            console.log(data0, data1)
+            const data1 = await response2.json();
             setweatherData(data0);
             sethourlyData(data1);
           } catch (error) {
