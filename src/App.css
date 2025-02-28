@@ -172,6 +172,7 @@ margin-top: 15px; border-style: none;}}
   color: #da0037;
   font-size: 20px;
 }
+@media (max-width: 800px) {.hourly h5 {font-size: initial;}}
 .hourly h2 {
   font-weight: bold;
   width: fit-content;
