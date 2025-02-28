@@ -15,7 +15,11 @@ function Main() {
 
     return(
         <div className="main_widget">
+        
             <div className="wgt_info">
+            <div className="today">
+                <h1>{weatherData.name}</h1>
+            </div>
                 <div className="wgt_info_contents">
                     <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="icon" />
                 </div>
@@ -39,5 +43,3 @@ function Main() {
 };
 
 export default Main;
-
-/** */
