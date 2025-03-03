@@ -34,7 +34,6 @@ function Highlights() {
                     <p>Average</p>
                 </div>
             </div>
-
             <div>
                 <h2>Hourly Weather</h2>
             </div>
