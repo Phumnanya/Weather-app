@@ -8,7 +8,7 @@ function Intro() {
         </div>
         <div className="intro2" id="intro2">
             <p>Get real-time forecasts, severe weather alerts, and personalized updates to keep
-                you prepared for any conditions.<br></br>
+                you prepared for any conditions.
                 <a href="#intro">Download</a> now and stay one step ahead of the storm!
             </p>
         </div>
