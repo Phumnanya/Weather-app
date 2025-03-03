@@ -13,15 +13,23 @@ function Searching() {
         const handleKeydown = (event) => {
             if (event.key === "Enter") {
                 fetchWeather(city);
+                handleClear();
             }
         }
-        
+        const handleClear = () => {
+            document.getElementById("intro1").style.display = "none";
+            document.getElementById("intro2").style.display = "none";
+        }
+        const handleAll = () => {
+            handleSearch();
+            handleClear();
+        }
 
         return(
         <div className="input-div">
         <input type="text" value={city} onChange={(e) => setCity(e.target.value)} onKeyDown={handleKeydown}
-        placeholder="Search for city" />
-        <button type="button" onClick={handleSearch}>Search</button>
+        placeholder="Search for a City" />
+        <button type="button" onClick={handleAll} >Search</button>
         </div>
         );
 };
