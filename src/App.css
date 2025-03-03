@@ -124,7 +124,7 @@ input[type=text] {
   border-radius: 18px;
   border: solid 1px rgb(190, 190, 190);
 }
-@media (max-width: 800px) {input[type=text] {width: 70%;}}
+@media (max-width: 800px) {input[type=text] {width: 68%; margin:0px;}}
 
 button {
   background-color: #da0037;
