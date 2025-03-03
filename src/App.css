@@ -1,14 +1,36 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-@media (max-width: 800px) {* h2 {font-size: 20px;}}
+* h2 {font-size: 20px; color: aliceblue;}
 @media (max-width: 800px) {* h4 {font-size: 20px;}}
+
+.intro1 {
+  width: 100%;
+  color: #da0037;
+  margin: auto;
+}
+.intro1 h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 800;
+}
+.intro2 {
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+  margin: auto;
+}
 
 body {
   background: none;
-  color: rgb(7, 7, 7);
+  color: #070707;
+  background-image: url("roman-skrypnyk-JgrnoQy4i0s-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 1000px;
+  background-attachment: fixed;
 }
-
+@media (max-width: 800px) {body {background-size: 500px 1000px; background-attachment: fixed;}}
 .container {
   display: flex;
   flex-direction: row;
@@ -22,15 +44,15 @@ body {
   width: 40%;
   height: 100%;
   padding: 10px;
-  background-color: #d2d2d2;
+  color: aliceblue;
+  background: none;
 }
-@media (max-width: 800px) {.main_widget {width: 100%; height: fit-content; padding: 0px;border-radius: 18px;
-border-style: none;}}
+@media (max-width: 800px) {.main_widget {width: 100%; height: fit-content; padding: 0px;}}
 
 .today {
   width: fit-content;
   text-transform: uppercase;
-  color: #da0037;
+  color: aliceblue;
 }
 @media (max-width: 800px) {.today h1 {font-size: 20px;}}
 .wgt_info {
@@ -50,7 +72,8 @@ border-style: none;}}
 #temperature {
   font-size: 80px;
   font-weight: bolder;
-  margin: 0%;
+  margin: 0px;
+  color: aliceblue;
 }
 @media (max-width: 800px) {#temperature {font-size: 50px; margin-left: 10px;}}
 .wgt_info img {
@@ -64,8 +87,13 @@ border-style: none;}}
 .description {
   width: 100%;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: aliceblue;
 }
-@media (max-width: 800px) {.description {margin-top: 5px;}}
+@media (max-width: 800px) {.description {flex-direction: row; justify-content: space-between;}}
 .description_flex {
   display: flex;
   flex-direction: row;
@@ -92,11 +120,11 @@ border-style: none;}}
 input[type=text] {
   margin: auto;
   width: 70%;
-  padding: 10px 12px;
-  border-radius: 15px;
+  padding: 12px 15px;
+  border-radius: 18px;
   border: solid 1px rgb(190, 190, 190);
 }
-@media (max-width: 800px) {input[type=text] {width: 60%;}}
+@media (max-width: 800px) {input[type=text] {width: 70%;}}
 
 button {
   background-color: #da0037;
@@ -116,12 +144,11 @@ button {
 .highlights {
   width: 60%;
   height: 100%;
-  background-color: #ffffff;
   padding: 0 10px;
   margin-left: 5px;
 }
-@media (max-width: 800px) {.highlights {width: 100%; height: fit-content; padding: 0px; margin-left: 0px;
-margin-top: 15px; border-style: none;}}
+@media (max-width: 800px) {.highlights {height: fit-content; padding: 0px; margin-left: 0px; margin-top: 15px;
+width: 100%;}}
 
 .info_container {
   display: flex;
@@ -129,13 +156,12 @@ margin-top: 15px; border-style: none;}}
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #d2d2d2;
+  color: aliceblue; 
+  border: #d2d2d2 groove 2px;
 }
-@media (max-width: 800px) {.info_container {border-radius: 18px;}}
 .info {
   width: 30%;
   padding: 10px;
-  border-radius: 30px;
 }
 .info h2 {
   color: #da0037;
@@ -150,17 +176,18 @@ margin-top: 15px; border-style: none;}}
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #d2d2d2;
-  margin: 40px 0px;
+  border: #d2d2d2 groove 2px;
+  margin-bottom: 40px;
 }
-@media (max-width: 800px) {.hourly_forecast {border-radius: 18px; margin: 20px 0px;}}
+@media (max-width: 800px) {.hourly_forecast {margin: 20px 0px;}}
 .hourly {
   width: 20%;
   padding: 10px;
   text-align: center;
   border-radius: 30px;
+  color: aliceblue;
 }
-@media (max-width: 800px) {.hourly {padding: 0px;}}
+@media (max-width: 800px) {.hourly {padding: 0px; color: aliceblue;}}
 .hourly img {
   width: 50px;
   height: 50px;
