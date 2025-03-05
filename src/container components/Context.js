@@ -5,6 +5,7 @@ export const Weathercontext = createContext();
 export const Weatherprovider = ({children}) => {
     const [weatherData, setweatherData] = useState(null);
     const [hourlyData, sethourlyData] = useState(null);
+const [loading, setLoading] = useState(true);
 
     const fetchWeather = async (city) => {
         const API_KEY = "431f5ef15584a951c785eec85f2b0ee0";
