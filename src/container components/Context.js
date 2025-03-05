@@ -8,6 +8,7 @@ export const Weatherprovider = ({children}) => {
 const [loading, setLoading] = useState(true);
 
     const fetchWeather = async (city) => {
+setLoading(true);
         const API_KEY = "431f5ef15584a951c785eec85f2b0ee0";
         const current = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
         const hourly = `https://pro.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
