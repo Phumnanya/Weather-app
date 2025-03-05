@@ -25,6 +25,10 @@ setLoading(true);
           }
 setLoading(false);
     };
+
+if(loading) {return (
+<div class="spinner-border text-light"></div>
+)};
     return (
         <Weathercontext.Provider value={{weatherData, hourlyData, fetchWeather}}>
             {children}
