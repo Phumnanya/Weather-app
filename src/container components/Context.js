@@ -23,6 +23,7 @@ setLoading(true);
           } catch (error) {
             alert("city not found", error);
           }
+setLoading(false);
     };
     return (
         <Weathercontext.Provider value={{weatherData, hourlyData, fetchWeather}}>
