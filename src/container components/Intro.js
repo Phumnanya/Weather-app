@@ -4,7 +4,7 @@ function Intro() {
     return(
         <>
         <div className="intro1" id="intro1">
-            <h1>Stay Ahead of the Weather - Anytime, Anywhere!</h1>
+            <h1>"Stay Ahead of the Weather - Anytime, Anywhere!"</h1>
         </div>
         <div className="intro2" id="intro2">
             <p>Get real-time forecasts, severe weather alerts, and personalized updates to keep
