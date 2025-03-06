@@ -5,14 +5,11 @@ export const Weathercontext = createContext();
 export const Weatherprovider = ({children}) => {
     const [weatherData, setweatherData] = useState(null);
     const [hourlyData, sethourlyData] = useState(null);
-const [loading, setLoading] = useState(false);
 
     const fetchWeather = async (city) => {
         const API_KEY = "431f5ef15584a951c785eec85f2b0ee0";
         const current = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
         const hourly = `https://pro.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
-
-setLoading(true);
 
         try {
             const response = await fetch(current);
@@ -23,14 +20,12 @@ setLoading(true);
             sethourlyData(data1);
           } catch (error) {
             alert("city not found", error);
-          } finally {
-setLoading(false);
-}
+          } 
     };
 
 
     return (
-        <Weathercontext.Provider value={{weatherData, hourlyData, fetchWeather, loading}}>
+        <Weathercontext.Provider value={{weatherData, hourlyData, fetchWeather}}>
             {children}
         </Weathercontext.Provider>
     );
