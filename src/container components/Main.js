@@ -2,12 +2,7 @@ import React, { useContext} from "react";
 import { Weathercontext } from "./Context";
 
 function Main() {
-    const { weatherData,loading } = useContext(Weathercontext);
-
-if(loading) { 
-return 
-<p>let's gooooooo</p>;
-}
+    const { weatherData } = useContext(Weathercontext);
 
     if(!weatherData) {
         return<p> </p>
