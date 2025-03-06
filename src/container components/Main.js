@@ -6,7 +6,7 @@ function Main() {
 
 if (loading) { 
 return 
-<div class="spinner-border text-light"></div>;
+<p>let's gooooooo</p>;
 }
 
     if(!weatherData) {
