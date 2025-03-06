@@ -3,12 +3,8 @@ import { Weathercontext } from "./Context";
 
 function Searching() {
      const [city, setCity] = useState('');
-     const { fetchWeather, loading } = useContext(Weathercontext);
+     const { fetchWeather } = useContext(Weathercontext);
     
-if(loading) { 
-return 
-<p>let's gooooooo</p>;
-}
         const handleSearch = () => {
             if (city.trim() !== "") {
             fetchWeather(city);
