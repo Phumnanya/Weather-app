@@ -2,7 +2,13 @@ import React, { useContext} from "react";
 import { Weathercontext } from "./Context";
 
 function Main() {
-    const { weatherData } = useContext(Weathercontext);
+    const { weatherData,loading } = useContext(Weathercontext);
+
+if (loading) { 
+return 
+<div class="spinner-border text-light"></div>
+;
+}
 
     if(!weatherData) {
         return<p> </p>
