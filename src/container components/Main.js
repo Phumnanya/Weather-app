@@ -4,7 +4,7 @@ import { Weathercontext } from "./Context";
 function Main() {
     const { weatherData,loading } = useContext(Weathercontext);
 
-if (loading) { 
+if(loading) { 
 return 
 <p>let's gooooooo</p>;
 }
