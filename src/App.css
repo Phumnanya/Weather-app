@@ -123,6 +123,7 @@ input[type=text] {
   padding: 12px 15px;
   border-radius: 18px;
   border: solid 1px rgb(190, 190, 190);
+touch-action: manipulation;
 }
 @media (max-width: 800px) {input[type=text] {width: 65%; padding: 10px 10px;}}
 
